@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+        }
+
+        body {
+            background-color: rgb(252, 255, 236);
+            font-family: jua;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        span {
+            width: 90%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h1 {
+                margin: auto;
+            }
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            font-size: 30px;
+        }
+
+        .menu-con {
+            height: 50px;
+            line-height: 50px;
+            width: 33.3%;
+            text-align: center;
+            border: 1px solid rgb(230, 180, 110);
+            box-shadow: 0px 0px 0px 2px blanchedalmond;
+            ;
+            background-color: blanchedalmond;
+        }
+
+        .selected {
+            background-color: rgb(230, 198, 151);
+        }
+
+        .menu-con:hover {
+            background-color: rgb(240, 214, 176);
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+
+            .up {
+                margin-top: 45px;
+                margin-bottom: 10px;
+                margin-left: 15px;
+                color: rgb(73, 72, 72)
+            }
+
+            .main-product {
+                width: 95%;
+                margin: auto;
+                display: flex;
+            }
+
+            .cucumber {
+                margin-top: 50px;
+                margin-left: 30px;
+                width: 50%;
+            }
+
+            .product-ex {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-left: 100px;
+color: rgb(248, 202, 146);
+                h3 {
+                    font-size: 60px;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                }
+
+                h4 {
+                    font-size: 25px;
+                    margin-top: 50px;
+                    margin-bottom: 38px;
+                    padding: 19px;
+                    color: rgb(255, 162, 49);
+                }
+                p {
+                    margin-top: 45px;
+                    font-size: 20px;
+                    color: rgb(77, 76, 75);
+                }
+                s{
+                    font-size: 19px;;
+                    color: rgb(153, 152, 152);
+                }
+                span{
+                    display: flex;
+                    flex-direction: row;
+                    width: 70%;
+                    margin: auto;
+                    justify-content: space-between;
+                }
+                button{
+                    width: 45%;
+                    margin: auto;
+                    padding:15px;
+                    height: 70px;
+                    font-size: 25px;
+                    background-color: rgb(16, 170, 42);
+                    color: rgb(213, 243, 218);
+                    border:none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 1px 2px  rgb(16, 114, 32);
+                }
+                button:hover{
+                    background-color: rgb(25, 148, 46);
+                    color:rgb(51, 173, 69);
+                }
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <span>
+            <img src="ff.png" alt="">
+            <h1>🥒오이마켓🥒</h1>
+        </span>
+    </header>
+    <hr>
+    <nav>
+        <ul class="menu">
+            <li type="button" class="menu-con selected">제품홍보관</li>
+            <li type="button" class="menu-con">교환관</li>
+            <li type="button" class="menu-con">생활정보관</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <div class="main-container">
+            <p class="up">메인페이지>제품홍보관>(제품1)상세정보</p>
+            <hr>
+            <div class="main-product">
+                <img class="cucumber" src="오이2.jpg" alt="판매제품 1">
+                <div class="product-ex">
+                    <h3>제품정보</h3>
+
+                    <h4>자연산으로 키워서 언제 먹어도 정말 맛있는 상품입니다. 우리가족이 무농약으로 직접재배한 제품입니다. 소비기한은 제품 구매후 30일 입니다.</h4>
+                    <p>권장 소비자 가격(세일가): <s>6,800</s>
+                        5,000원</p>
+                    <span class="buyit">
+                    <button class="buy-product" type="button">구매하기</button>
+                    <button class="cart-product" type="button">장바구니 담기</button>
+                </span>
+                </div>
+            </div>
+        </div>
+        <section class="sec-1">
+            <div>
+            <p>제품 상세설명</p>
+            </div>
+        </section>
+    </main>
+    <hr>
+</body>
+
+</html>
